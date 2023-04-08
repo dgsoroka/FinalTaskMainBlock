@@ -11,6 +11,9 @@ int arrSize = Convert.ToInt32(Console.ReadLine());
 String[] stringArray = new String[arrSize];
 FillArray(stringArray);
 PrintArray(stringArray);
+String[] newArray = OnlySmallerOrEqualThreeArray(stringArray);
+Console.WriteLine("Наш новый массив");
+PrintArray(newArray);
 
 
 void FillArray(String[] array)
@@ -53,6 +56,7 @@ String[] OnlySmallerOrEqualThreeArray(String[] array)
 void PrintArray(Object[] array){
   for (int i = 0; i < array.Length; i++)
   {
-    Console.Write(stringArray[i] + " ");
+    Console.Write(array[i] + " ");
   }
+  Console.WriteLine();
 }
